@@ -1,0 +1,1 @@
+package com.example.exception;public class ItemNotFoundException extends Throwable {    public ItemNotFoundException(String e) {        super(e);    }}
