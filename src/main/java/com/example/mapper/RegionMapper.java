@@ -1,0 +1,1 @@
+package com.example.mapper;public interface RegionMapper {    Long getId();    Integer getOrderNumber();    String getName();}
