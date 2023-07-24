@@ -1,0 +1,1 @@
+POST http://localhost:8080/api/v1/attachContent-Type: multipart/form-data; boundary=WebAppBoundary--WebAppBoundaryContent-Disposition: form-data; name="file"; filename="19d163b29f08a0b4c4fa021e46f03347.png"< C:\Users\Muhammad Yusuf\Desktop\tep\19d163b29f08a0b4c4fa021e46f03347.png###GET http://localhost:8080/api/v1/attach/open/19d163b29f08a0b4c4fa021e46f03347.png
