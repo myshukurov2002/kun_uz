@@ -1,1 +1,1 @@
-POST http://localhost:8080/api/v1/auth/loginContent-Type: application/json{  "phone":"901234567",  "password":"1"}###POST http://localhost:8080/api/v1/auth/loginContent-Type: application/json{  "phone":"234",  "password":"345"}
+POST http://localhost:8080/api/v1/auth/loginContent-Type: application/json{  "phone":"2",  "password":"2"}###POST http://localhost:8080/api/v1/auth/loginContent-Type: application/json{  "phone":"1",  "password":"1"}

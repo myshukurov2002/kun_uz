@@ -1,1 +1,1 @@
-package com.example.mapper;public interface CategoryMapper {    Integer getId();    Integer getOrderNumber();    String getName();}
+package com.example.mapper;public interface CategoryMapper {    Long getId();    Integer getOrderNumber();    String getName();}

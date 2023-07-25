@@ -1,1 +1,1 @@
-package com.example.dto;import lombok.Data;@Datapublic class AuthDTO {    private String phone;    private String password;}
+package com.example.dto;import com.fasterxml.jackson.annotation.JsonInclude;import lombok.Data;@Data@JsonInclude(JsonInclude.Include.NON_NULL)public class AuthDTO {    private String phone;    private String password;}

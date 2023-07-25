@@ -1,1 +1,1 @@
-package com.example.dto;import com.example.entity.ProfileEntity;import lombok.AllArgsConstructor;import lombok.Data;@Data@AllArgsConstructorpublic class JwtDTO {    private Long id;    private ProfileEntity.Role role;}
+package com.example.dto;import com.example.entity.ProfileEntity;import com.fasterxml.jackson.annotation.JsonInclude;import lombok.AllArgsConstructor;import lombok.Data;@Data@AllArgsConstructor@JsonInclude(JsonInclude.Include.NON_NULL)public class JwtDTO {    private Long id;    private ProfileEntity.Role role;}
