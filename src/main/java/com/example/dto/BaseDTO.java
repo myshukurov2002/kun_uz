@@ -1,0 +1,1 @@
+package com.example.dto;import com.fasterxml.jackson.annotation.JsonInclude;import jakarta.persistence.MappedSuperclass;import lombok.Data;import java.time.LocalDateTime;@Data@MappedSuperclass@JsonInclude(JsonInclude.Include.NON_NULL)public class BaseDTO {    private Long id;    private Boolean visibility;    private LocalDateTime createdDate;}
