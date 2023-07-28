@@ -1,0 +1,1 @@
+package com.example.dto;import com.fasterxml.jackson.annotation.JsonInclude;import lombok.Data;import java.time.LocalDate;@Data@JsonInclude(JsonInclude.Include.NON_NULL)public class CommentFilterDTO {    private String id;    private LocalDate fromDate;    private LocalDate toDate;    private Long profileId;    private String articleId;}
