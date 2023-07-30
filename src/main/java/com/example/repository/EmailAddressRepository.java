@@ -1,0 +1,1 @@
+package com.example.repository;import com.example.entity.EmailAdressEntity;import org.springframework.data.jpa.repository.JpaRepository;public interface EmailAddressRepository extends JpaRepository<EmailAdressEntity, Long> {    EmailAdressEntity getByEmail(String email);}
