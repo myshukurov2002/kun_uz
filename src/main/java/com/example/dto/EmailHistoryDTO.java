@@ -1,0 +1,1 @@
+package com.example.dto;import com.fasterxml.jackson.annotation.JsonInclude;import jakarta.persistence.Column;import lombok.Data;@Data@JsonInclude(JsonInclude.Include.NON_NULL)public class EmailHistoryDTO extends BaseStringDTO{    private String message;    private String email;}
