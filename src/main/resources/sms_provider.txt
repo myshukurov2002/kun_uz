@@ -1,0 +1,36 @@
+*** SMS Provider ***
+Sms provider uchun api larni tuzing.
+Maqsad Client-lardan SMS larni olib ularni tegishli telefon raqamlar jo'natish.
+
+Client-lar authorization qiladi va token oladi. Shu token orqali sms habar jo'natishlari mumkun.
+   Token 7kun available-bo'ladi. (7kundan keyin yangi token olishi kerak.)
+Client-lar registration bo'lmaydi. Admin Client-larni registratsiya qiladi.
+
+SMS - jo'natish uchun Client-lar o'zlarini sistemelaridan request jo'natib sms craete qilishadi.
+    Header da token ni berishlari kerak.
+    Authorization: Bearer eyJhbGciOi.dasdasd.asdasda
+
+*** Entities ***
+1. Profile (id,name,surname,login,password,status,message,created_date)  - ishchi xodimlar
+2. Client (id,company_name,login,password,status,message,created_date)
+3. SMS (id,company_id,phone,message,created_date)
+
+Client and Profile Status (ACTIVE,CLOCK)
+
+*** Api List ***
+
+1. Auth
+    1. Login (login,password) - Client
+      returns  token
+
+    2. Login (login,password) - Profile
+      (name,surname,status)
+2. Client
+     1. Create - company_name,login,password
+     2. Pagination (created_date desc)
+     3. Change status by id.
+3. SMS
+    1. Create - (phone,message)  - qaysi company ekanligini token dan bilasizlar.
+    2. Pagination By Company id - pagination da request jo'natgan company sms lari bo'lihs kerak created_date desc .
+                    (har bir ko'mpanu o'zini sms larini ko'ra oladi halos.)
+

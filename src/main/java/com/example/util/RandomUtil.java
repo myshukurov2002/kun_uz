@@ -1,0 +1,1 @@
+package com.example.util;import lombok.experimental.UtilityClass;import java.util.Random;@UtilityClasspublic class RandomUtil {    public String getRandomSmsCode() {        Random random = new Random();        return String.valueOf(random.nextInt(100, 999));    }}

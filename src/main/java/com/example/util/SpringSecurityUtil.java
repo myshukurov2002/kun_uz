@@ -1,0 +1,1 @@
+package com.example.util;import lombok.experimental.UtilityClass;@UtilityClasspublic class SpringSecurityUtil {    public String getCurrentUser() {        return null;    }}
