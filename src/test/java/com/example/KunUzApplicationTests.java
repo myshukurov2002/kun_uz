@@ -13,9 +13,9 @@ class KunUzApplicationTests {
 
 //        System.out.println(MD5Util.encode("1"));
 
-        String token = JWTUtil.encode(20L, ProfileEntity.Role.ROLE_MODERATOR);
-        System.out.println(token);
-        System.out.println(JWTUtil.decode(token));
+//        String token = JWTUtil.encode(20L, ProfileEntity.Role.ROLE_MODERATOR);
+//        System.out.println(token);
+//        System.out.println(JWTUtil.decode(token));
 //        System.out.println(SecurityUtil.hasRole("Bearer " + token);
     }
 
